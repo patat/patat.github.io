@@ -1,0 +1,29 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #FFFF66;
+}
+
+#wrapper {
+	width: 100%;
+	background: #FFFF66;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 100%;
+}
+
+#main-head {
+	width: 500px;
+	height: 300px;
+	margin: 30px auto;
+	padding-top: 50px;
+	background: #E6E600;
+	border-radius: 25px;
+	box-shadow: 15px 15px 15px #663300;
+	text-align: center;
+}
+
+#main-head h1 {
+	font-size: 4em;
+	font-style: italic;
+	color: #663300;	
+}
