@@ -1,29 +1,16 @@
-html, body {
-	margin: 0;
-	padding: 0;
-	background: #FFFF66;
+.jumbotron {
+    font-family: Ubuntu, sans-serif;
 }
 
-#wrapper {
-	width: 100%;
-	background: #FFFF66;
-	font-family: "Ubuntu", sans-serif;
-	font-size: 100%;
+.lead {
+    margin: 10px 0 15px 10px;
 }
 
-#main-head {
-	width: 500px;
-	height: 300px;
-	margin: 30px auto;
-	padding-top: 50px;
-	background: #E6E600;
-	border-radius: 25px;
-	box-shadow: 15px 15px 15px #663300;
-	text-align: center;
+.lead:nth-of-type(2) {
+    font-size: 0.98em;
 }
 
-#main-head h1 {
-	font-size: 4em;
-	font-style: italic;
-	color: #663300;	
+#puzzle {
+    margin: 0 auto;
 }
+
