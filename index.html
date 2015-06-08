@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Patat's Adventures</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+    <title>Patat's Adventures</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Satisfy" type="text/css">
+    <link rel="stylesheet" href="css/puzzle.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div id="wrapper">
-    <header id="main-head">
-      <h1>Soon To Be</h1>
-    </header>
-    
-  </div>
+    <!-- Jumbotron -->
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="puzzle"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h1>The Fifteen Puzzle</h1>
+                    <p class="lead">Press the solve button if you are stuck!</p>
+                    <p class="lead">Written by
+                        <a href="http://jamie-wong.com/2011/10/16/fifteen-puzzle-algorithm/">Jamie Wong</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header><!-- End Jumbotron -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
-  <script src="js/custom.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <script src="js/underscore-min.js"></script>
+    <!-- Puzzle -->
+    <script src="js/fifteen-puzzle.js"></script>
+    <!-- End Puzzle -->
+
+    <script src="js/custom.js"></script>
+    <script>var puzzle = new Puzzle($('#puzzle'))</script>
 </body>
 </html>
