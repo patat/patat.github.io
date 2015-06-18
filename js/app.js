@@ -10,22 +10,9 @@ wikiGame.controller( 'wikiCtrl', function($scope, $http) {
   //     $scope.wikiContent = response;
   //     console.log($scope.wikiContent);
   //   } );
-});
 
-$.ajax( {
-    'url': 'https://en.wikipedia.org/w/api.php',
-    'data': {
-        'action': 'query',
-        'meta': 'userinfo',
-        'format': 'json',
-        'origin': 'http://patat.github.io'
-    },
-    'xhrFields': {
-        'withCredentials': true
-    },
-    'success': function( data ) {
-        alert( 'Foreign user ' + data.query.userinfo.name +
-            ' (ID ' + data.query.userinfo.id + ')' );
-    },
-    'dataType': 'json'
-} );
+  $http.jsonp("http://angularjs.org/greet.php?callback=JSON_CALLBACK&name=Super%20Hero")
+    .success(function(data) {
+      console.log(data);
+    });
+});
