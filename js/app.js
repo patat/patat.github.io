@@ -18,7 +18,7 @@ $.ajax( {
         'action': 'query',
         'meta': 'userinfo',
         'format': 'json',
-        'origin': 'http://patat.github.io/'
+        'origin': 'http://patat.github.io'
     },
     'xhrFields': {
         'withCredentials': true
