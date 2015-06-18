@@ -3,7 +3,7 @@ var wikiGame = angular.module( 'wikiGame', []);
 wikiGame.controller( 'wikiCtrl', function($scope, $http) {
   $scope.wikiContent = [];
 
-  var url = 'http://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json&origin=http://patat.github.io';
+  var url = 'http://en.wikipedia.org/w/api.php?callback=JSON_CALLBACK&action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json&';
 
   // $http.get( url )
   //   .success( function( response ) {
@@ -11,7 +11,7 @@ wikiGame.controller( 'wikiCtrl', function($scope, $http) {
   //     console.log($scope.wikiContent);
   //   } );
 
-  $http.jsonp("http://angularjs.org/greet.php?callback=JSON_CALLBACK&name=Super%20Hero")
+  $http.jsonp( url )
     .success(function(data) {
       console.log(data);
     });
