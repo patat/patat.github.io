@@ -1,16 +1,5 @@
-.jumbotron {
-    font-family: Ubuntu, sans-serif;
+.square {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
 }
-
-.lead {
-    margin: 10px 0 15px 10px;
-}
-
-.lead:nth-of-type(2) {
-    font-size: 0.98em;
-}
-
-#puzzle {
-    margin: 0 auto;
-}
-
