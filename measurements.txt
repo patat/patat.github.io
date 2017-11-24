@@ -1,0 +1,4 @@
+Initial DCL: 518ms, onload: 3036ms
+media="print": DCL: 351ms, onload: 2731ms
+without webfont: DCL: 344ms, onload: 2208ms
+analytics async
